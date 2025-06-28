@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/AppointmentRx/static/css/main.0e9de07a.css",
+    "main.js": "/AppointmentRx/static/js/main.87c74137.js",
+    "static/media/profile-2.png": "/AppointmentRx/static/media/profile-2.4752a9db34458eeffcfa.png",
+    "static/media/profile-1.png": "/AppointmentRx/static/media/profile-1.0261bb4efe7a9075c56a.png",
+    "static/media/pediatrics.png": "/AppointmentRx/static/media/pediatrics.1091ac896a3c8beda777.png",
+    "static/media/doctor-group.png": "/AppointmentRx/static/media/doctor-group.01394386d8270bd40bc1.png",
+    "static/media/profile-3.png": "/AppointmentRx/static/media/profile-3.530bb2fd7ece3dd3b3be.png",
+    "static/media/doctor-book-appointment.png": "/AppointmentRx/static/media/doctor-book-appointment.edb3f4ac282ff3fefaec.png",
+    "static/media/profile-4.png": "/AppointmentRx/static/media/profile-4.3c44185ab9c84614038f.png",
+    "static/media/HeathConnect.png": "/AppointmentRx/static/media/HeathConnect.a677bcd18e0313756ea8.png",
+    "static/media/dermatology.png": "/AppointmentRx/static/media/dermatology.1456786a2ef779d25a15.png",
+    "static/media/cardiology.png": "/AppointmentRx/static/media/cardiology.bc1bf6cde2cde8595bf5.png",
+    "static/media/neurology.png": "/AppointmentRx/static/media/neurology.b84d1834e79d5439783f.png",
+    "static/media/doctor-picture.png": "/AppointmentRx/static/media/doctor-picture.ad2363c37c7fc5d6c30b.png",
+    "static/media/gynecology.png": "/AppointmentRx/static/media/gynecology.1f620d2efc2f5b8d7c65.png",
+    "index.html": "/AppointmentRx/index.html",
+    "main.0e9de07a.css.map": "/AppointmentRx/static/css/main.0e9de07a.css.map",
+    "main.87c74137.js.map": "/AppointmentRx/static/js/main.87c74137.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e9de07a.css",
+    "static/js/main.87c74137.js"
+  ]
+}
