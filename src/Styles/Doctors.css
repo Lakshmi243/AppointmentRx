@@ -1,0 +1,53 @@
+/* Container styling */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* DoctorCard container */
+.doctor-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile image */
+.doctor-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #1e8ffd;
+}
+
+/* Text styling */
+.doctor-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.doctor-card p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+  color: #666;
+}
+
+/* Star rating area */
+.doctor-card .doctor-rating {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #999;
+}

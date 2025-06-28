@@ -1,0 +1,67 @@
+.review-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-message {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.review-quote {
+  font-size: 2rem;
+  color: #1e8ffd;
+  font-weight: bold;
+  margin: 0 0.3rem;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.review-author {
+  text-align: left;
+}
+
+.review-name {
+  font-weight: 600;
+  color: #222;
+}
+
+.review-location {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.review-nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.review-btn {
+  background-color: #1e8ffd;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.review-btn:hover {
+  background-color: #006fd3;
+}
