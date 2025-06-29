@@ -47,6 +47,8 @@ const Navbar: React.FC = () => {
           <li><a href="#about" className="navbar-links">About</a></li>
           <li><a href="#reviews" className="navbar-links">Reviews</a></li>
           <li><a href="#doctors" className="navbar-links">Doctors</a></li>
+          <li><Link to="/appointment" className="navbar-links">Appointment</Link></li>
+          <li><Link to="/legal" className="navbar-links">Legal</Link></li>
         </ul>
 
         <button
@@ -84,6 +86,8 @@ const Navbar: React.FC = () => {
             <li><a onClick={toggleMobileNav} href="#about">About</a></li>
             <li><a onClick={toggleMobileNav} href="#reviews">Reviews</a></li>
             <li><a onClick={toggleMobileNav} href="#doctors">Doctors</a></li>
+            <li><Link onClick={toggleMobileNav} to="/appointment">Appointment</Link></li>
+            <li><Link onClick={toggleMobileNav} to="/legal">Legal</Link></li>
             <li><a onClick={toggleMobileNav} href="#contact">Contact</a></li>
           </ul>
         </aside>
