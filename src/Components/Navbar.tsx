@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCommentDots, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 import HealthConnect from "../Assets/HeathConnect.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastPosition } from "react-toastify";
 
 const Navbar: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isChatBtnDisabled, setIsChatBtnDisabled] = useState(false);
   const toastPosition: ToastPosition = "top-center";
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMobileNav = (): void => {
     setIsMobileNavOpen((prev) => !prev);
@@ -32,6 +34,19 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string): void => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/", { replace: false });
+      setTimeout(() => {
+        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+      }, 200); // Give time for Home to render
+    } else {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileNavOpen(false); // close mobile menu
+  };
+
   return (
     <>
       <nav className="navbar-section" aria-label="Main Navigation">
@@ -43,10 +58,10 @@ const Navbar: React.FC = () => {
 
         <ul className="navbar-items">
           <li><Link to="/" className="navbar-links">Home</Link></li>
-          <li><a href="#services" className="navbar-links">Services</a></li>
-          <li><a href="#about" className="navbar-links">About</a></li>
-          <li><a href="#reviews" className="navbar-links">Reviews</a></li>
-          <li><a href="#doctors" className="navbar-links">Doctors</a></li>
+          <li><a href="#services" className="navbar-links" onClick={(e) => handleAnchorClick(e, "services")}>Services</a></li>
+          <li><a href="#about" className="navbar-links" onClick={(e) => handleAnchorClick(e, "about")}>About</a></li>
+          <li><a href="#reviews" className="navbar-links" onClick={(e) => handleAnchorClick(e, "reviews")}>Reviews</a></li>
+          <li><a href="#doctors" className="navbar-links" onClick={(e) => handleAnchorClick(e, "doctors")}>Doctors</a></li>
           <li><Link to="/appointment" className="navbar-links">Appointment</Link></li>
           <li><Link to="/legal" className="navbar-links">Legal</Link></li>
         </ul>
@@ -81,14 +96,14 @@ const Navbar: React.FC = () => {
           </div>
 
           <ul className="mobile-navbar-links">
-            <li><Link onClick={toggleMobileNav} to="/">Home</Link></li>
-            <li><a onClick={toggleMobileNav} href="#services">Services</a></li>
-            <li><a onClick={toggleMobileNav} href="#about">About</a></li>
-            <li><a onClick={toggleMobileNav} href="#reviews">Reviews</a></li>
-            <li><a onClick={toggleMobileNav} href="#doctors">Doctors</a></li>
-            <li><Link onClick={toggleMobileNav} to="/appointment">Appointment</Link></li>
-            <li><Link onClick={toggleMobileNav} to="/legal">Legal</Link></li>
-            <li><a onClick={toggleMobileNav} href="#contact">Contact</a></li>
+            <li><Link to="/" onClick={toggleMobileNav}>Home</Link></li>
+            <li><a href="#services" onClick={(e) => handleAnchorClick(e, "services")}>Services</a></li>
+            <li><a href="#about" onClick={(e) => handleAnchorClick(e, "about")}>About</a></li>
+            <li><a href="#reviews" onClick={(e) => handleAnchorClick(e, "reviews")}>Reviews</a></li>
+            <li><a href="#doctors" onClick={(e) => handleAnchorClick(e, "doctors")}>Doctors</a></li>
+            <li><Link to="/appointment" onClick={toggleMobileNav}>Appointment</Link></li>
+            <li><Link to="/legal" onClick={toggleMobileNav}>Legal</Link></li>
+            <li><a href="#contact" onClick={(e) => handleAnchorClick(e, "contact")}>Contact</a></li>
           </ul>
         </aside>
 
