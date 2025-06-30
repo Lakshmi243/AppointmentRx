@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <div className="App">
       <Router basename="/">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/AppointmentRx" element={<Home />} />
           <Route path="/legal" element={<Legal />} /> 
           <Route path="/appointment" element={<Appointment />} />
           <Route path="*" element={<NotFound />} /> 
