@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AppointmentRx/static/css/main.0e9de07a.css",
-    "main.js": "/AppointmentRx/static/js/main.f4a241e7.js",
+    "main.js": "/AppointmentRx/static/js/main.d12cb569.js",
     "static/media/profile-2.png": "/AppointmentRx/static/media/profile-2.4752a9db34458eeffcfa.png",
     "static/media/profile-1.png": "/AppointmentRx/static/media/profile-1.0261bb4efe7a9075c56a.png",
     "static/media/pediatrics.png": "/AppointmentRx/static/media/pediatrics.1091ac896a3c8beda777.png",
@@ -17,10 +17,10 @@
     "static/media/gynecology.png": "/AppointmentRx/static/media/gynecology.1f620d2efc2f5b8d7c65.png",
     "index.html": "/AppointmentRx/index.html",
     "main.0e9de07a.css.map": "/AppointmentRx/static/css/main.0e9de07a.css.map",
-    "main.f4a241e7.js.map": "/AppointmentRx/static/js/main.f4a241e7.js.map"
+    "main.d12cb569.js.map": "/AppointmentRx/static/js/main.d12cb569.js.map"
   },
   "entrypoints": [
     "static/css/main.0e9de07a.css",
-    "static/js/main.f4a241e7.js"
+    "static/js/main.d12cb569.js"
   ]
 }
