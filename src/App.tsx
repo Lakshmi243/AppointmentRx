@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Legal from "./Pages/Legal";
@@ -9,12 +9,12 @@ import Appointment from "./Pages/Appointment";
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/legal" element={<Legal />} />
+          <Route path="/legal" element={<Legal />} /> 
           <Route path="/appointment" element={<Appointment />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
       </Router>
     </div>
